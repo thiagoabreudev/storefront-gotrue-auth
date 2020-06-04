@@ -5,6 +5,10 @@ Vue.use(VueRouter)
 
 const routes = [
   {
+    path: '/',
+    redirect: '/recover'
+  },
+  {
     path: '/recover/:token',
     name: 'Recover',
     component: () => import(/* webpackChunkName: "recovery" */ '../views/Recover.vue')
@@ -13,7 +17,7 @@ const routes = [
 ]
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: 'hash',
   base: process.env.BASE_URL,
   routes
 })
