@@ -53,7 +53,7 @@ export default {
       return i19confirmPassword ? i18n(i19confirmPassword) : 'Confirm password'
     },
     i19recoveryPassowrdSuccess () {
-      return i19recoveryPassowrdSuccess ? i18n(i19recoveryPassowrdSuccess) : 'password changed successfully'
+      return i19recoveryPassowrdSuccess ? i18n(i19recoveryPassowrdSuccess) : 'Password changed successfully'
     }
   }
 }
