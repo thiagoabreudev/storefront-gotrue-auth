@@ -25,7 +25,7 @@ export default {
   methods: {
     verify () {
       const auth = new GoTrue({
-        APIUrl: 'https://gotrue.ecomplus.biz',
+        APIUrl: process.env.VUE_APP_GOTRUE_HOST,
         audience: '',
         setCookie: false
       })
