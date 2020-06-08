@@ -23,7 +23,7 @@ export default {
         setCookie: false
       })
 
-      auth.recover(this.$route.hash.replace('#recovery_token=', ''))
+      auth.recover(this.$route.params.pathMatch)
         .then(res => { this.user = res })
         .catch(error => { this.error = error })
     },

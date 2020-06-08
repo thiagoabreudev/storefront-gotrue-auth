@@ -5,7 +5,7 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
+    path: '/recovery_token=*',
     name: 'Recover',
     component: () => import(/* webpackChunkName: "recovery" */ '../views/Recover.vue')
   }
