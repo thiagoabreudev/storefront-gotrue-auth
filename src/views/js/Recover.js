@@ -5,7 +5,7 @@ import { i18n } from '@ecomplus/utils'
 import {
   i19newPassword,
   i19confirmPassword,
-  i19recoveryPassowrdSuccess
+  i19passwordChangedSuccessfully
 } from '@ecomplus/i18n'
 
 export default {
@@ -52,8 +52,8 @@ export default {
     i19confirmPassword () {
       return i19confirmPassword ? i18n(i19confirmPassword) : 'Confirm password'
     },
-    i19recoveryPassowrdSuccess () {
-      return i19recoveryPassowrdSuccess ? i18n(i19recoveryPassowrdSuccess) : 'Password changed successfully'
+    i19passwordChangedSuccessfully () {
+      return i19passwordChangedSuccessfully ? i18n(i19passwordChangedSuccessfully) : 'Password changed successfully'
     }
   }
 }
