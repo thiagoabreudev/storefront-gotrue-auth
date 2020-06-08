@@ -1,5 +1,12 @@
 
 import GoTrue from 'gotrue-js'
+import { i18n } from '@ecomplus/utils'
+
+import {
+  i19newPassword,
+  i19confirmPassword,
+  i19recoveryPassowrdSuccess
+} from '@ecomplus/i18n'
 
 export default {
   name: 'Recover',
@@ -36,6 +43,17 @@ export default {
           this.error = undefined
         })
         .catch(error => { this.error = error })
+    }
+  },
+  computed: {
+    i19newPassword () {
+      return i19newPassword ? i18n(i19newPassword) : 'New password'
+    },
+    i19confirmPassword () {
+      return i19confirmPassword ? i18n(i19confirmPassword) : 'Confirm password'
+    },
+    i19recoveryPassowrdSuccess () {
+      return i19recoveryPassowrdSuccess ? i18n(i19recoveryPassowrdSuccess) : 'password changed successfully'
     }
   }
 }
